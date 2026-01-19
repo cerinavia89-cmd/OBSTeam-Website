@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book a Consultation – O'Neill Business Solutions Team</title>
+<style>
+        :root {
+            --primary-color: #0f4c81;
+            --secondary-color: #00a7c7;
+            --accent-color: #ffd166;
+            --bg-color: #f5f9fc;
+            --text-color: #333333;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: "Segoe UI", Tahoma, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        header {
+            background: var(--primary-color);
+            color: #ffffff;
+        }
+        header .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo a {
+            color: #ffffff;
+            font-size: 1.6rem;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 16px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: rgba(255,255,255,0.1);
+        }
+        nav a.cta {
+            background: var(--accent-color);
+            color: var(--primary-color);
+        }
+        .book-hero {
+            background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 80%, var(--bg-color) 100%);
+            color: #ffffff;
+            padding: 100px 16px 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .book-hero::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 120px;
+            background: linear-gradient(0deg, var(--bg-color) 0%, rgba(245,249,252,0) 100%);
+        }
+        .book-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .book-hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .booking-section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 16px;
+        }
+        .booking-section h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 16px;
+            text-align: center;
+        }
+        .booking-section p {
+            margin-bottom: 24px;
+            text-align: center;
+        }
+        /* Calendly embed container */
+        .calendly-embed {
+            width: 100%;
+            min-height: 600px;
+            border: none;
+        }
+        footer {
+            background: var(--primary-color);
+            color: #ffffff;
+            text-align: center;
+            padding: 24px 16px;
+            font-size: 0.9rem;
+        }
+
+        .site-logo { height: 42px; width: auto; display: block; }
+
+        .logo a { display: flex; align-items: center; gap: 10px; }
+
+
+
+/* Footer disclosures (added) */
+.footer-disclosure-links{
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+  line-height: 1.6;
+}
+.footer-disclosure-links .sep{opacity:0.7;}
+.footer-disclosure-links a{
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.footer-disclosure-links a:hover{
+  color: var(--secondary-color);
+}
+.footer-disclosures{
+  margin-top: 14px;
+  text-align: left;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-disclosures details{
+  margin-top: 10px;
+}
+.footer-disclosures summary{
+  cursor: pointer;
+  font-weight: 700;
+}
+.footer-disclosures p, .footer-disclosures li{
+  color: #ffffff;
+}
+.footer-disclosures ul{
+  margin: 8px 0 0 18px;
+}
+
+</style>
+</head>
+<body>
+<header>
+<div class="container">
+<div class="logo"><a href="index.html"><img alt="O'Neill Business Solutions Team Logo" class="site-logo" src="assets/images/OBST Logo.png"/><span>O'Neill Business Solutions Team</span></a></div>
+<nav>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="education.html">Education</a></li>
+<li><a href="about.html">About</a></li>
+<li><span>Se Habla Espanol</span></li>
+<li><a class="cta current" href="book.html">Book Consultation</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<section class="book-hero">
+<h1>Book a Consultation</h1>
+<p>Select a time that works best for you and let’s start the conversation about your financial goals.</p>
+</section>
+<div class="booking-section">
+<h2>Schedule Your Consultation</h2>
+<p>Please choose a date and time from the calendar below to book your free consultation. We look forward to connecting with you.</p>
+<!-- Calendly inline widget begins -->
+<iframe class="calendly-embed" scrolling="no" src="https://calendly.com/oneill-financial/consultation?hide_event_type_details=1&amp;hide_gdpr_banner=1"></iframe>
+<!-- Calendly inline widget ends -->
+</div>
+<footer>
+        © 2026 O'Neill Business Solutions Team. All rights reserved.<br/>
+        Serving Dallas, Texas and the surrounding communities.
+
+<div class="footer-disclosure-links">
+<a href="privacy-policy.html">Privacy Policy</a>
+<span class="sep">|</span>
+<a href="terms-of-service.html">Terms of Service</a>
+<span class="sep">|</span>
+<a href="financial-services-disclaimer.html">Financial Services Disclaimer</a>
+<span class="sep">|</span>
+<a href="notary-public-disclosure.html">Notary Public Disclosure</a>
+<span class="sep">|</span>
+<a href="scheduling-notice.html">Scheduling Notice</a>
+<span class="sep">|</span>
+<a href="licensing-disclosure.html">Licensing Disclosure</a>
+</div>
+</footer>
+</body>
+</html>
